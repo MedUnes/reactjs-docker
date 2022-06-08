@@ -4,7 +4,7 @@ FROM node:${NODE_VERSION}-buster
 
 ARG APP_NAME
 
-RUN usermod -aG 1000 root
+RUN usermod -aG root 1000
 USER 1000:1000
 WORKDIR /app/${APP_NAME}
 
